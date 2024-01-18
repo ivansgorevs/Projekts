@@ -31,5 +31,5 @@ Lai šī programmatūra darbotos, tiek izmantotas vairākas Python bibliotēkas:
 ### Programmatūras izmantošanas metodes
 1. Pēc programmas palaišanas atveras tīmekļa pārlūkprogramma ar Binance vietni, tiek veikta 1 sekundes aizkave, izmantojot komandu **time.sleep()** un tiek apstiprināta cookie failu izmantošana, un pārslēdzas uz sadaļu "Markets". 
 2. Sadaļa "Markets" tiek parādīta informācija par galvenajām kriptovalūtām, kas pēc noklusējuma ir sakārtotas pēc tirgus apjoma, no šīs lapas tiek izgūta informācija par to cenu un procentu izmaiņām pēdējo 24 stundu laikā, izmantojot metodi **driver.find_element(By.CSS_SELECTOR, ...)**.
-3. Pēc pirmās darbības tīmekļa lapā sākas nākamais for cikls, atrodas elements, kas atbilst "Сhange" pogai, pēc kura tas tiek nospiest un un dati tiek izgūti, šī darbība notiek divas reizes.
+3. Pēc pirmās darbības tīmekļa lapā sākas nākamais for cikls, tiek atrasts elements, kas atbilst "Сhange" pogai, pēc kura tas tiek nospiest un un dati tiek izgūti, šī darbība notiek divas reizes.
 4. Pēc tam var ievadīt konkrētas kriptovalūtas nosaukumu, lai iegūtu detalizētu informāciju par šo valūtu.
